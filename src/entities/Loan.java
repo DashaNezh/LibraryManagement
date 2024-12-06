@@ -11,6 +11,7 @@ public class Loan {
     private BookCopy bookCopy;
     private User user;
     private LoanStateHandler state;
+    private Book book;
 
     public Loan(BookCopy bookCopy, User user) {
         this.bookCopy = bookCopy;
@@ -43,5 +44,16 @@ public class Loan {
 
     public Book getBook() {
         return book;
+    }
+    public void setBook(Book book) {
+        this.book = book;
+    }
+
+    public Date getLoanDate() {
+        return loanDate;
+    }
+
+    public void setLoanDate(Date loanDate) {
+        this.loanDate = loanDate;
     }
 }

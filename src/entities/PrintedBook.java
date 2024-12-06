@@ -21,4 +21,9 @@ public class PrintedBook extends Book {
     public String getDescription() {
         return "Printed book: " + getTitle() + " by " + getAuthor() + " located at " + shelfLocation;
     }
+    @Override
+    public int getPopularity() {
+        // Логика для вычисления популярности для печатной книги
+        return super.getPopularity();
+    }
 }

@@ -1,5 +1,6 @@
 package services;
 
+import entities.Librarian;
 import entities.User;
 
 public class AccountProxy implements AccountService {

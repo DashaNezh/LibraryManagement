@@ -3,6 +3,7 @@ package entities;
 public abstract class Book {
     private String title;
     private String author;
+    private int popularity;
 
     public Book(String title, String author) {
         this.title = title;
@@ -19,5 +20,14 @@ public abstract class Book {
 
     public String getAuthor() {
         return author;
+    }
+
+    // Геттер и сеттер для популярности
+    public int getPopularity() {
+        return popularity;
+    }
+
+    public void setPopularity(int popularity) {
+        this.popularity = popularity;
     }
 }
