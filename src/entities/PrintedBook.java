@@ -19,7 +19,7 @@ public class PrintedBook extends Book {
     // Реализация абстрактного метода getDescription
     @Override
     public String getDescription() {
-        return "Printed book: " + getTitle() + " by " + getAuthor() + " located at " + shelfLocation;
+        return "Печатная книга: " + getTitle() + " от " + getAuthor() + " расположенная по адресу " + shelfLocation;
     }
     @Override
     public int getPopularity() {

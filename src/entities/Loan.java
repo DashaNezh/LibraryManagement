@@ -56,4 +56,12 @@ public class Loan {
     public void setLoanDate(Date loanDate) {
         this.loanDate = loanDate;
     }
+
+    public  Date getReturnDate(){
+        return returnDate;
+    }
+
+    public void setReturnDate(Date returnDate){
+        this.returnDate = returnDate;
+    }
 }

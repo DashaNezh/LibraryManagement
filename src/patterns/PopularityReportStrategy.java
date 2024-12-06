@@ -6,9 +6,9 @@ import java.util.List;
 public class PopularityReportStrategy implements ReportStrategy {
     @Override
     public void generateReport(List<Loan> loans) {
-        System.out.println("Generating report by popularity:");
+        System.out.println("Создание отчета по популярности:");
         loans.stream()
                 .sorted((l1, l2) -> Integer.compare(l2.getBook().getPopularity(), l1.getBook().getPopularity()))
-                .forEach(loan -> System.out.println("Book: " + loan.getBook().getTitle()));
+                .forEach(loan -> System.out.println("Книга: " + loan.getBook().getTitle()));
     }
 }

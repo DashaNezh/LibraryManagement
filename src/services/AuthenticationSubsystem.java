@@ -7,7 +7,7 @@ public class AuthenticationSubsystem {
 
     public boolean authenticate(String username, String password) {
         // Здесь будет код аутентификации, например, через базу данных
-        System.out.println("Authenticating user: " + username);
+        System.out.println("Аутентификация пользователя: " + username);
         return username.equals("admin") && password.equals("password123");
     }
 

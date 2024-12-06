@@ -12,7 +12,7 @@ public class EBook extends Book {
 
     @Override
     public String getDescription() {
-        return String.format("E-Book: %s by %s, Size: %.2f MB, Format: %s",
+        return String.format("Электронная книга: %s от %s, Размер: %.2f MB, Формат: %s",
                 getTitle(), getAuthor(), fileSize, format);
     }
 }

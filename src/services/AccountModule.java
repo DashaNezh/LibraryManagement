@@ -11,6 +11,6 @@ public class AccountModule implements AccountService {
 
     @Override
     public void performOperation(String operation) {
-        System.out.println(user.getName() + " performs operation: " + operation);
+        System.out.println(user.getName() + " выполняет операцию: " + operation);
     }
 }

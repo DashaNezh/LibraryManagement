@@ -15,7 +15,7 @@ public class AccountProxy implements AccountService {
     @Override
     public void performOperation(String operation) {
         if ("manageBooks".equals(operation) && !(user instanceof Librarian)) {
-            System.out.println("Access denied!");
+            System.out.println("Доступ запрещен!");
         } else {
             accountModule.performOperation(operation);
         }

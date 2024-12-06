@@ -17,7 +17,7 @@ public class Review implements RatingComponent {
 
     @Override
     public void display() {
-        System.out.println("Review: " + comment);
+        System.out.println("Обзор: " + comment);
         for (RatingComponent component : components) {
             component.display();
         }

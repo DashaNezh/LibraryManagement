@@ -11,10 +11,10 @@ public class AuthenticationFacade {
 
     public boolean login(String username, String password) {
         if (authenticationSubsystem.authenticate(username, password)) {
-            System.out.println("Login successful!");
+            System.out.println("Вход в систему прошел успешно!");
             return true;
         } else {
-            System.out.println("Invalid username or password.");
+            System.out.println("Неверное имя пользователя или пароль.");
             return false;
         }
     }
