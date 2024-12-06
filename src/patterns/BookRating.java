@@ -11,6 +11,6 @@ public class BookRating implements RatingComponent {
 
     @Override
     public void display() {
-        System.out.println("Rating for " + bookTitle + ": " + rating + " stars");
+        System.out.println("Рейтинг для " + bookTitle + ": " + rating + " звезд(ы)");
     }
 }

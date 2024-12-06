@@ -1,6 +1,6 @@
 package entities;
 
-public abstract class User {
+public abstract class User implements Observer{
     private String name;
     private String email;
 
@@ -27,7 +27,7 @@ public abstract class User {
         this.email = email;
     }
 
-    public void receiveNotification(String notification) {
+    public void update(String notification) {
         System.out.println("Уведомления для " + name + ": " + notification);
     }
 }

@@ -2,9 +2,9 @@ package entities;
 
 public class BookCopy implements Cloneable {
     private Book book;
-    private String id;
+    private int id;
 
-    public BookCopy(Book book, String id) {
+    public BookCopy(Book book, int id) {
         this.book = book;
         this.id = id;
     }
@@ -17,11 +17,11 @@ public class BookCopy implements Cloneable {
         this.book = book;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

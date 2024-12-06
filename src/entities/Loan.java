@@ -17,11 +17,16 @@ public class Loan {
         this.bookCopy = bookCopy;
         this.user = user;
         this.state = new IssuedState();  // Начальное состояние - книга выдана
+        this.book = bookCopy.getBook();  // Инициализация поля book из bookCopy
     }
 
     // Устанавливаем новое состояние для книги
     public void setState(LoanStateHandler state) {
         this.state = state;
+    }
+
+    public Memento saveState() {
+        return new Memento(this);
     }
 
     // Обработка состояния, например, выводим сообщения о текущем состоянии
